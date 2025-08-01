@@ -1,0 +1,157 @@
+/* Definição das variáveis de cor */
+:root {
+    --verde-limao: #A0D157;
+    --verde-escuro: #388E3C;
+    --amarelo: #FFEB3B;
+    --branco: #FFFFFF;
+    --roxo-lilac: #8E44AD;
+    --cinza-escuro: #2C3E50;
+    --cinza-claro: #ECF0F1;
+}
+
+/* Estilo geral do corpo e fontes */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--cinza-claro);
+    color: var(--cinza-escuro);
+    line-height: 1.6;
+}
+
+/* Layout do cabeçalho */
+.header {
+    background-color: var(--verde-escuro);
+    color: var(--branco);
+    text-align: center;
+    padding: 3rem 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-title {
+    font-size: 2.5rem;
+    margin: 0;
+    font-weight: 600;
+}
+
+.header-subtitle {
+    font-size: 1.2rem;
+    margin: 0.5rem 0 1rem;
+    color: var(--amarelo);
+}
+
+.header-nav {
+    margin-top: 1.5rem;
+}
+
+.nav-link {
+    color: var(--branco);
+    text-decoration: none;
+    font-weight: 400;
+    margin: 0 1.5rem;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    padding-bottom: 0.3rem;
+}
+
+.nav-link:hover {
+    color: var(--amarelo);
+    border-bottom: 2px solid var(--amarelo);
+}
+
+/* Estilo das seções principais */
+.main-content {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+}
+
+.section {
+    background-color: var(--branco);
+    padding: 2.5rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+    font-size: 2rem;
+    color: var(--verde-limao);
+    border-bottom: 3px solid var(--verde-limao);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.section-text {
+    text-align: justify;
+}
+
+/* Estilo dos itens de lista e blocos */
+.contact-info a {
+    color: var(--verde-escuro);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.contact-info a:hover {
+    color: var(--roxo-lilac);
+}
+
+.job-item, .education-item {
+    border-left: 4px solid var(--roxo-lilac);
+    padding-left: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.job-title, .education-degree {
+    font-size: 1.3rem;
+    color: var(--cinza-escuro);
+    margin: 0;
+}
+
+.job-company, .education-institution {
+    font-style: italic;
+    color: #777;
+    margin: 0.3rem 0;
+}
+
+.job-description {
+    padding-left: 1rem;
+    margin: 0.5rem 0 0;
+}
+
+.job-description li {
+    margin-bottom: 0.5rem;
+}
+
+/* Estilo das tags de habilidades */
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+}
+
+.skill-tag {
+    background-color: var(--roxo-lilac);
+    color: var(--branco);
+    padding: 0.5rem 1.2rem;
+    border-radius: 20px;
+    font-weight: 600;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.skill-tag:hover {
+    transform: scale(1.05);
+    background-color: var(--amarelo);
+    color: var(--cinza-escuro);
+}
+
+/* Estilo do rodapé */
+.footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: var(--verde-escuro);
+    color: var(--branco);
+    margin-top: 2rem;
+}
